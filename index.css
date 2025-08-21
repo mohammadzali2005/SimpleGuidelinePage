@@ -1,0 +1,117 @@
+/* imported the needed font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'lato';
+}
+
+body{
+    min-height: 100vh;
+    background-color: #121826;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(./resources/Background_image@2x.png);                 /*background image at the back*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    color: #E5E7EB;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.advertise{
+    font-size: 18px;
+    color: #9DA3AE;
+    margin-bottom: 40px;                                                        /*paragraph on top*/
+}
+
+.guides{
+    width: 72.5%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.guide{
+    width: 375px;
+    height: 100%;
+    border-radius: 20px;
+    padding: 35px;
+    background-color: #212936;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.guide1-icon, 
+.guide2-icon, 
+.guide3-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-bottom: 25px;
+}    
+
+.guide1-icon{
+    background-color: #FCEED8;
+}
+
+.guide2-icon{
+    background-color: #DEE9FC;
+}
+
+.guide3-icon{
+    background-color: #FBE5E6;
+}
+
+.guide-title{
+    font-size: 22px;
+    color: #E5E7EB;
+    margin-bottom: 20px;
+}
+
+.guide-paragraph{
+    font-size: 16px;
+    width: 80%;
+    color: #D2D5DA;
+    margin-bottom: 20px;
+    height: 15%;
+}
+
+.guide-image{
+    width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+@media (max-width: 1400px){                                                   /*adding space between each guide after decreasing the width of the screen*/
+    .guide{
+        margin: 10px 5px;
+    }
+}
